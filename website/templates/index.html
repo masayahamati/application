@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{%load static%}
+
+{%block main%}
+<h1>コンテンツがあります</h1>
+
+{% if username != "佐藤" %}
+<h2>{{username}}さんこんにちは</h2>
+{% elif username != "慶次"%}
+<h2>コアラさんこんにちは</h2>
+{%endif%}
+
+
+
+
+
+
+
+<img src="{% static '傘の画像.png' %}">
+{%endblock%}
+

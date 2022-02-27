@@ -1,0 +1,21 @@
+{%load static%}
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{%static 'main.css'%}">
+    </head>
+    <body>
+        <h1>自己紹介</h1>
+        {% include "_navbar.html" %}
+        <h2>実績</h2>
+        <h2>これまでに{{num}}個のサービスを提供しました</h2>
+        <ol>
+            {%for skill in skills%}
+                <li>{{skill}}</li>
+            {%endfor%}
+        </ol>
+    </body>
+
+
+</html>
+

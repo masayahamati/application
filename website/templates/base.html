@@ -1,0 +1,18 @@
+{%load static%}
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{%static 'main.css'%}">
+    </head>
+    <body>
+        <h1>今日はいい天気ですね</h1>
+        {% include "_navbar.html" %}
+        {% block  main%}
+        コンテンツがありません。
+        {% endblock %}
+
+
+    </body>
+
+
+</html>
