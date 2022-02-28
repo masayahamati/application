@@ -1,5 +1,3 @@
-from ssl import _create_default_https_context
-import cv2
 from django.views.generic import TemplateView
 
 class IndexView(TemplateView):
